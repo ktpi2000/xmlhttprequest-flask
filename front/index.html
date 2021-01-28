@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+  <input type="radio" id="JP" name="language" value="JAPANESE" onchange="selectLanguage()">
+  <label for="apple">JP</label><br>
+  <input type="radio" id="JP" name="language" value="ENGLISH" onchange="selectLanguage()">
+  <label for="banana">US</label><br>
+
+  <form action="index" method="post">
+    <label>Message:<input type="text" id="text" value="" /></label>
+    <button type="button" id="btn-post" onclick="fetchText();">Click</button>
+    <div id="result"></div>
+  </form>
+</body>
+<script src="index.js"></script>
+
+</html>
