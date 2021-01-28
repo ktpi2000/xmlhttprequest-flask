@@ -8,7 +8,7 @@ app.debug = True
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
-        print(request.get_data())
+        print(request.get_data().decode('utf-8'))
         return 'good'
     return 'goooooood'
 
